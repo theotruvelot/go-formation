@@ -8,14 +8,7 @@ func main() {
 	//fmt.Println(card)
 
 	//utilisation du type deck
-	cards := deck{"Ace of Diamonds", newCard()}
-	//ajout dans un slice
-	cards = append(cards, "Six of Spades")
-	//boucle
-	cards.print()
-}
+	cards := newDeck()
 
-// Type of return = string
-func newCard() string {
-	return "Five of Diamonds"
+	cards.print()
 }
