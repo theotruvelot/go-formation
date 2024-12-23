@@ -7,15 +7,12 @@ func main() {
 	//card := newCard()
 	//fmt.Println(card)
 
-	////création d'une slice
-	//cards := []string{"Ace of Diamonds", newCard()}
-	////ajout dans un slice
-	//cards = append(cards, "Six of Spades")
-	////boucle
-	//for i, card := range cards {
-	//	fmt.Println(i, card)
-	//}
-
+	//utilisation du type deck
+	cards := deck{"Ace of Diamonds", newCard()}
+	//ajout dans un slice
+	cards = append(cards, "Six of Spades")
+	//boucle
+	cards.print()
 }
 
 // Type of return = string
